@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 告诉浏览器对屏幕宽度的响应 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Lijie 330855615@qq.com">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/images/favicon.png">
+    <title>标题</title>
+    <!-- 惯例常用CSS -->
+    <link href="/static/dist/css/style.min.css" rel="stylesheet">
+    <!-- HTML5 Simm和Real.js IE8支持HTML5元素和媒体查询 -->
+    <!-- 警告：如果您JS不起作用。请查看下面页面能否访问 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- 预加载程序-你可以在SPNENES.CSS中找到样式。 -->
+        <!-- ============================================================== -->
+        <div class="preloader">
+            <div class="lds-ripple">
+                <div class="lds-pos"></div>
+                <div class="lds-pos"></div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- 预加载程序-你可以在SPNENES.CSS中找到样式。 -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Login box.scss -->
+        <!-- ============================================================== -->
+        <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(/static/assets/images/big/auth-bg.jpg) no-repeat center center;">
+            <div class="auth-box">
+                <div id="loginform">
+                    <div class="logo">
+                        <span class="db"><img src="/static/assets/images/logo-icon.png" alt="logo" /></span>
+                        <h3 class="font-medium m-b-20"></h3>
+                    </div>
+                    <!-- 表单 -->
+                    <div class="row">
+                        <div class="col-12">
+                            <form class="form-horizontal m-t-20" id="loginform">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1"><i class="ti-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control form-control-lg" placeholder="用户名" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon2"><i class="ti-pencil"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control form-control-lg" placeholder="密码" aria-label="Password" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">记住我</label>
+                                            <a href="javascript:void(0)" id="to-recover" class="text-dark float-right"><i class="fa fa-lock m-r-5"></i> 忘记密码？</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center">
+                                    <div class="col-xs-12 p-b-20">
+                                        <button class="btn btn-block btn-lg btn-info" type="submit">登录</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
+                                        <div class="social">
+                                            <a href="javascript:void(0)" class="btn  btn-facebook" data-toggle="tooltip" title="" data-original-title="Facebook账户登录"> <i aria-hidden="true" class="fab  fa-facebook"></i> </a>
+                                            <a href="javascript:void(0)" class="btn btn-googleplus" data-toggle="tooltip" title="" data-original-title="Google账户登录"> <i aria-hidden="true" class="fab  fa-google-plus"></i> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group m-b-0 m-t-10">
+                                    <div class="col-sm-12 text-center">
+                                        您还没有账户吗? <a href="authentication-register1.html" class="text-info m-l-5"><b>立即注册</b></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="recoverform">
+                    <div class="logo">
+                        <span class="db"><img src="/static/assets/images/logo-icon.png" alt="logo" /></span>
+                        <h5 class="font-medium m-b-20">找回密码</h5>
+                        <span>输入您的电子邮件，指令将随邮件发送给你！</span>
+                    </div>
+                    <div class="row m-t-20">
+                        <!--表单 -->
+                        <form class="col-12" action="index.html">
+                            <!-- 邮件 -->
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <input class="form-control form-control-lg" type="email" required="" placeholder="email">
+                                </div>
+                            </div>
+                            <!-- 密码 -->
+                            <div class="row m-t-20">
+                                <div class="col-12">
+                                    <button class="btn btn-block btn-lg btn-danger" type="submit" name="action">重置</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Login box.scss -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper scss in scafholding.scss -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper scss in scafholding.scss -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Right Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Right Sidebar -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- All Required js -->
+    <!-- ============================================================== -->
+    <script src="/static/assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether 核心JavaScript -->
+    <script src="/static/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/static/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- 这是页面JS -->
+    <!-- ============================================================== -->
+    <script>
+    $('[data-toggle="tooltip"]').tooltip();
+    $(".preloader").fadeOut();
+    // ============================================================== 
+    // 登录和恢复密码 
+    // ============================================================== 
+    $('#to-recover').on("click", function() {
+        $("#loginform").slideUp();
+        $("#recoverform").fadeIn();
+    });
+    </script>
+</body>
+
+</html>
