@@ -1,6 +1,6 @@
 <?php
 namespace app\admin\controller;
-use app\common\Authcommon;
+use auth\Auth;
 
 
 
@@ -9,11 +9,13 @@ use app\common\Authcommon;
  *
  * @author GL-LiJie
  */
-class Admin extends Authcommon
+class Admin
 {
        public function index()
     {
-           return "用户表";
+
+           $group = new Auth();
+           var_dump( $group->getUserInfo(4));
            
     }
 }

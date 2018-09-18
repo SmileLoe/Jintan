@@ -8,17 +8,11 @@ use think\facade\Session;
 
 class Login extends Controller {
 
-    public function initialize() {
-        parent::initialize();
-    }
-
     //默认登录页面
     public function index() {
         //已登陆，跳转到后台首页
         if(Session::get('admin_id')){        
             $this->redirect('/admin/index');
-        } else {
-            $this->display();
         }
         return $this->fetch();
     }
